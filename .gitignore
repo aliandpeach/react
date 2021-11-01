@@ -1,0 +1,9 @@
+**/target
+.idea
+**/*.iml
+run
+static
+**/.svn
+**/node_modules
+**/create-react-app
+**/react-admin-master

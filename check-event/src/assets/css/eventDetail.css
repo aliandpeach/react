@@ -1,0 +1,113 @@
+.ant-modal-header {
+  background: #f1455b !important;
+}
+
+.ant-modal-title {
+  background: #f1455b !important;
+}
+
+.ant-modal-body {
+  padding: 4px !important;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+}
+
+.text-detail {
+  /*padding-left: 1rem;*/
+}
+
+.event-red, .select-red .mat-select-value .ng-star-inserted {
+  color: #ff5959;
+}
+
+.div2 {
+  line-height: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+}
+
+.inline-block {
+  width: 30%;
+  display: inline-block
+}
+
+.rate {
+  color: red;
+  display: inline;
+  width: auto;
+  font-size: 18px;
+}
+
+.text {
+  width: 75px;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100%;
+}
+
+.sensitivityId {
+  width: auto;
+  padding: 2px .5rem;
+  color: #fff;
+}
+
+.color-1 {
+  background-color: #3782c1;
+}
+.color-2 {
+  background-color: #37c19d;
+}
+.color-3 {
+  background-color: #ffcd49;
+}
+.color-4 {
+  background-color: #ff7649;
+}
+.color-5 {
+  background-color: #f1455b;
+}
+
+.span2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: calc(100% - 100px);
+  height: 100%;
+}
+
+.table2 {
+  margin-top: 3px;
+  /*padding-left: 1rem;*/
+  width: calc(100% - 1rem);
+  height: 18rem;
+  overflow: auto;
+  background-color: #fafafa;
+}
+
+.pre2 {
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.ant-card-head-title {
+  display: inline-block;
+  -ms-flex: 1;
+  flex: 1 1;
+  padding: 4px 0 !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
