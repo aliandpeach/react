@@ -134,7 +134,10 @@ class CheckEvent extends React.Component {
         },
         data:[],
 
-        detailVisible: false
+        detailVisible: false,
+
+        errorVisible: false,
+        message: ''
     }
 
     closeModal(a) {
@@ -194,6 +197,10 @@ class CheckEvent extends React.Component {
                 data: res.data.rowList,
                 pagination
             })
+        }).catch(e => {
+            console.log(e.response.data.message);
+            console.log(e.response.status);
+            this.setState({message: e.response.data.message, errorVisible: true, loading: false});
         })
     }
 
@@ -223,6 +230,7 @@ class CheckEvent extends React.Component {
         sortedInfo = sortedInfo || {}
         filteredInfo = filteredInfo || {}
         const {detailVisible} = this.state;
+        const {errorVisible} = this.state;
         return (
             <div>
                 <Table rowKey={record => record.id}
@@ -236,6 +244,16 @@ class CheckEvent extends React.Component {
                 <Modal visible={detailVisible} title='事件详情' width={'800px'} style={{color: 'black'}}
                        onCancel={() => this.closeModal('detailVisible')} footer={null}>
                     <EventDetail eventId={this.state.eventId}/>
+                </Modal>
+                <Modal visible={errorVisible} title='提示信息' width={'320px'} style={{color: 'black'}}
+                       onCancel={() => this.closeModal('errorVisible')} footer={
+                    <div style={{textAlign: 'center'}}>
+                        <Button style={{backgroundColor: '#f1455b'}} onClick={() => this.closeModal('errorVisible')}>确认</Button>
+                    </div>
+                }>
+                    <div style={{height: '150px', overflowY: 'auto', overflowX: 'hidden'}}>
+                        <p style={{paddingTop: '20px', paddingLeft: '20px'}}>{this.state.message}</p>
+                    </div>
                 </Modal>
             </div>
         )
