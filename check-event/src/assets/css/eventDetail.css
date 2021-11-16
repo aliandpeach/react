@@ -135,7 +135,7 @@
 
 .ant-modal-title {
   margin: 0;
-  color: rgba(0, 0, 0, 0.85);
+  color: #ffffff !important;
   font-weight: 500;
   font-size: 16px;
   line-height: 10px !important;

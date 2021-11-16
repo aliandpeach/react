@@ -248,7 +248,7 @@ class CheckEvent extends React.Component {
                 <Modal visible={errorVisible} title='提示信息' width={'320px'} style={{color: 'black'}}
                        onCancel={() => this.closeModal('errorVisible')} footer={
                     <div style={{textAlign: 'center'}}>
-                        <Button style={{backgroundColor: '#f1455b'}} onClick={() => this.closeModal('errorVisible')}>确认</Button>
+                        <Button style={{backgroundColor: '#f1455b', color: '#ffffff'}} onClick={() => this.closeModal('errorVisible')}>确认</Button>
                     </div>
                 }>
                     <div style={{height: '150px', overflowY: 'auto', overflowX: 'hidden'}}>
