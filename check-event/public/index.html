@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/static/fav.ico" />
@@ -39,5 +39,9 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script th:inline="javascript">
+      // let taskId = [[${taskId}]];
+      // sessionStorage.setItem("taskId", taskId);
+    </script>
   </body>
 </html>
